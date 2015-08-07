@@ -1,5 +1,8 @@
 # Web Bluetooth API Study
 
+- https://github.com/shokai/WebBluetoothAPIStudy
+- https://shokai.github.io/WebBluetoothAPIStudy
+
 ## Requirements
 
 - Chrome Canary
