@@ -7,7 +7,8 @@
   "scripts": {
     "test": "eslint */*.es6",
     "watch": "esw */*.es6 --watch",
-    "scan": "babel-node node/scan.es6"
+    "scan": "babel-node node/scan.es6",
+    "advertise": "babel-node node/advertise.es6"
   },
   "keywords": [
     "bluetooth"
@@ -20,6 +21,7 @@
     "eslint-watch": "^1.2.4"
   },
   "dependencies": {
+    "bleno": "^0.1.14",
     "noble": "^1.0.2"
   }
 }
