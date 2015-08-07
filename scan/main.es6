@@ -6,19 +6,15 @@ function info(msg){
   $("#log").append($("<li>").text(msg));
 }
 
-//var req = { filters: [{ services: ["generic_access", "battery_service"] }] };
-
 var req = {
   filters: [
     {
       services: [
-        "40e714e8-d869-4b99-9b12-3db963d661f3"
+        "713d0000-503e-4c75-ba94-3148f18d941e" // blendmicro
       ]
     }
   ]
 };
-/**/
-
 
 function scan(){
   if(!(navigator.bluetooth && typeof navigator.bluetooth.requestDevice === "function")){
