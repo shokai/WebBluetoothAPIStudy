@@ -1,0 +1,20 @@
+{
+  "name": "web-bluetooth-api-study",
+  "version": "0.0.1",
+  "description": "Web Bluetooth API Study",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint */*.es6",
+    "watch": "esw */*.es6 --watch"
+  },
+  "keywords": [
+    "bluetooth"
+  ],
+  "author": "Sho Hashimoto <hashimoto@shokai.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "eslint": "^0.24.1",
+    "eslint-watch": "^1.2.4"
+  }
+}
