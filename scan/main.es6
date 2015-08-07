@@ -3,7 +3,7 @@
 
 function info(msg){
   if(typeof msg !== "string") msg = msg.toString();
-  $("#log").prepend($("<li>").text(msg));
+  $("#log").append($("<li>").text(msg));
 }
 
 var services =
@@ -15,11 +15,13 @@ function scan(){
     return info("Web Bluetooth API is not supported");
   }
 
-  info("start scanning");
-  navigator.bluetooth.requestDevice({filters: {services: []}})
+  var type = "battery_service";
+  info(`start scanning "${type}"`);
+  navigator.bluetooth.requestDevice({filters: {services: services}})
     .then(function(device){
       console.log(device);
       info(`found "${device.name}"`);
+      info(JSON.stringify(device));
     })
     .catch(function(err){
       console.error(err);

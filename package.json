@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "Web Bluetooth API Study",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "eslint */*.es6",
-    "watch": "esw */*.es6 --watch"
+    "watch": "esw */*.es6 --watch",
+    "scan": "babel-node node/scan.es6"
   },
   "keywords": [
     "bluetooth"
@@ -16,5 +18,8 @@
     "babel-eslint": "^4.0.5",
     "eslint": "^0.24.1",
     "eslint-watch": "^1.2.4"
+  },
+  "dependencies": {
+    "noble": "^1.0.2"
   }
 }
