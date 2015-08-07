@@ -6,9 +6,8 @@ function info(msg){
   $("#log").append($("<li>").text(msg));
 }
 
-var req = { filters: [{ services: ["generic_access", "battery_service"] }] };
+//var req = { filters: [{ services: ["generic_access", "battery_service"] }] };
 
-/*
 var req = {
   filters: [
     {
