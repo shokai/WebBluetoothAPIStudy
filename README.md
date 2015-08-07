@@ -1,5 +1,9 @@
 # Web Bluetooth API Study
 
+## Requirements
+
+- Chrome Canary
+  - Enable `chrome://flags/#enable-web-bluetooth`
 
 ## Install Dependencies
 
