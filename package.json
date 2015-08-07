@@ -21,6 +21,7 @@
     "eslint-watch": "^1.2.4"
   },
   "dependencies": {
+    "babel": "^5.8.21",
     "bleno": "^0.1.14",
     "noble": "^1.0.2"
   }
