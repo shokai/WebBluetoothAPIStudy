@@ -21,3 +21,12 @@
 ## tools
 
     % npm run scan
+
+
+## Note
+
+### GATT(General Attribute Profile)
+
+- https://developer.bluetooth.org/TechnologyOverview/Pages/GATT.aspx
+- https://developer.bluetooth.org/gatt/Pages/default.aspx
+

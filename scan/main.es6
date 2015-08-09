@@ -16,6 +16,7 @@ var req = {
   ]
 };
 
+
 function scan(){
   if(!(navigator.bluetooth && typeof navigator.bluetooth.requestDevice === "function")){
     return info("Web Bluetooth API is not supported");
@@ -26,6 +27,10 @@ function scan(){
     .then(function(device){
       console.log(device);
       info(`found "${device.name}"`);
+      return device.connectGATT();
+    })
+    .then(function(server){
+      console.log(server);
     })
     .catch(function(err){
       console.error(err);
