@@ -24,15 +24,15 @@ function scan(){
 
   info("start scanning - " + JSON.stringify(req));
   navigator.bluetooth.requestDevice(req)
-    .then(function(device){
+    .then(device => {
       console.log(device);
       info(`found "${device.name}"`);
       return device.connectGATT();
     })
-    .then(function(server){
+    .then(server => {
       console.log(server);
     })
-    .catch(function(err){
+    .catch(err => {
       console.error(err);
       info(err);
     });
